@@ -2,7 +2,7 @@ const chatBox = document.getElementById("chat-box");
 const input = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
 
-const API_KEY = "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";
+const API_KEY = "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";
 
 sendBtn.addEventListener("click", async () => {
   const userMessage = input.value.trim();
