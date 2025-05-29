@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 30px;
+  }
+  
+  h2 {
+    color: #00bfff;
+    margin-bottom: 20px;
+  }
+  
+  #chat-box {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+    margin-bottom: 15px;
+  }
+  
+  #chat-box div {
+    margin-bottom: 10px;
+  }
+  
+  input#user-input {
+    width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2a2a2a;
+    color: #fff;
+    outline: none;
+  }
+  
+  input#user-input::placeholder {
+    color: #888;
+  }
+  
+  #send-btn {
+    width: 20%;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+  }
+  
+  #send-btn:hover {
+    background-color: #008fcc;
+    transform: scale(1.03);
+  }
+  
