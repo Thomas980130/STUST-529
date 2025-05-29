@@ -4,7 +4,18 @@ const sendBtn = document.getElementById("send-btn");
 
 const API_KEY = "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";
 
-sendBtn.addEventListener("click", async () => {
+sendBtn.onclick = () => {
+  sendMessage();
+};
+
+input.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();  // 防止換行
+    sendMessage();
+  }
+});
+
+async function sendMessage() {
   const userMessage = input.value.trim();
   if (!userMessage) return;
 
@@ -43,7 +54,7 @@ sendBtn.addEventListener("click", async () => {
     sendBtn.disabled = false;
     chatBox.scrollTop = chatBox.scrollHeight;
   }
-});
+}
 
 function appendMessage(sender, message) {
   const div = document.createElement("div");
